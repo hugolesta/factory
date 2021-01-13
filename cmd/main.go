@@ -24,6 +24,7 @@ func main() {
 	err = conn.Connect()
 	if err != nil {
 		fmt.Printf("it couldn't make the conection %v", err)
+		os.Exit(1)
 	}
 	now, err := conn.GetNow()
 
